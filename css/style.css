@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cereal", sans-serif;
+}
+
+@font-face {
+    font-family: "cereal";
+    src: url("/assets/Radikal/Nootype\ -\ Radikal.otf");
+}
+
+
+/* Menu */
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+.menu li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.menu a{
+    color: rgba(0, 0, 0, 0.6);
+    transition: .3s;
+}
+
+.menu a:hover{
+    color: rgba(13, 173, 160, 0.8);
+}
+
+.active a{
+    color: rgb(13, 173, 160);
+    padding-bottom: 22px;
+    border-bottom: 3px solid rgb(13, 173, 160);
+}
+
+.menus a{
+    text-decoration: none;
+}
+
+.menu ul{
+    margin-left: 100px;
+    position: absolute;
+    top: 40%;
+    letter-spacing: 1px;
+}
+
+.menus:nth-child(2), .menus:nth-child(3), .menus:nth-child(4){
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.comece-ja, .info{
+    float: right;
+}
+
+
+.comece-ja{
+    position: absolute;
+    right: 50px;
+    top: 20%;
+    margin-right: 30px;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: rgb(204, 54, 54);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.comece-ja:hover{
+    background-color: rgb(187, 41, 41);
+    transform: scale(1.05);
+}
+
+
+.info p{
+    margin-right: 170px;
+    position: absolute;
+    right: 100px;
+    top: 35%;
+    color: rgb(146, 146, 146);
+}
+
+.preco{
+    position: absolute;
+    right: 185px;
+    top: 30%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo{
+    margin-left: 30px;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+
+/* Main */
