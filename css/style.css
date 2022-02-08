@@ -10,6 +10,12 @@
     src: url("/assets/Radikal/Nootype\ -\ Radikal.otf");
 }
 
+.container{
+    background: url("/assets/background.jpg") no-repeat center;
+    background-size: cover;
+    height: calc(100% - 80px);
+    width: 100%;
+}
 
 /* Menu */
 .nav{
@@ -105,6 +111,9 @@
     margin-left: 30px;
     font-size: 40px;
     margin-top: 15px;
+}
+
+.logo a{
     color: rgb(13, 173, 160);
 }
 
@@ -113,8 +122,6 @@
 .main{
     display: flex;
     flex-direction: row-reverse;
-    background: url("/assets/background.jpg") no-repeat center;
-    background-size: cover;
 }
 
 .side-infos{
@@ -158,12 +165,8 @@
     width: 100%;
     margin-bottom: 15px;
     padding: 10px;
-    border: none;
-    outline: none;
-}
-
-#local:focus{
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    
 }
 
 #local::placeholder{
@@ -173,7 +176,7 @@
 #espaco{
     padding: 10px;
     color: rgba(0, 0, 0, 0.5);
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
     outline: none;
     width: 62%;
 }
@@ -184,6 +187,7 @@
     border: none;
     outline: none;
     width: 36%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /* Button */
@@ -214,4 +218,32 @@
 
 .btn-side:active{
     background-color: rgb(211, 25, 25);
+}
+
+/* Footer */
+
+.footer-name{
+    width: 100%;
+    height: 10px;
+    padding: 15px;
+    text-align: center;
+    line-height: 5px;
+    border-radius: 1px;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+.footer-name a{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+.footer-name p{
+    color: white;
+}
+
+.footer-name a:hover{
+    font-size: 20px;
+    color: orange;
 }
